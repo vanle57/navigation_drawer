@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="my_center">
+        <item>Iris</item>
+        <item>EngForU</item>
+        <item>Academy</item>
+        <item>Broadway</item>
+    </string-array>
+
+    <string-array name="my_location">
+        <item>Hà Nội</item>
+        <item>Đà Nẵng</item>
+        <item>TP. Hồ Chí Minh</item>
+        <item>Cần Thơ</item>
+        <item>Hải Phòng</item>
+        <item>Bình Dương</item>
+        <item>Huế</item>
+    </string-array>
+</resources>

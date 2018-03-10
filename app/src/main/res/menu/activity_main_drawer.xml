@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category_list"
+            android:icon="@drawable/ic_menu_cat"
+            android:title="Category List" />
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/ic_menu_cmnt"
+            android:title="Your Post" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_saved_list"
+            android:icon="@drawable/ic_menu_savedlist"
+            android:title="Saved" />
+        <item
+            android:id="@+id/nav_love_list"
+            android:icon="@drawable/ic_menu_lovelist"
+            android:title="Love" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_menu_location"
+            android:title="Your Location" />
+
+    </group>
+
+
+
+</menu>
