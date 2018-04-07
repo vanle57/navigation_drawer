@@ -1,17 +1,17 @@
-package com.example.administrator.revieweducationcenter.models;
+package com.example.hongv.navigationdrawer.model;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 
 /**
  * Created by Administrator on 03/02/2018.
  */
 
-public class Center {
+public class Center implements Serializable{
     private  int idCenter;
     private  String nameCenter;
     private  String address;
-    private String phone;
-    private int picture;
+    private  String phone;
+    private  int picture;
     private  float quality;
 
     public Center(int idCenter, String nameCenter, String address, String phone, int picture, float quality) {
@@ -66,7 +66,6 @@ public class Center {
     public void setPicture(int picture) {
         this.picture = picture;
     }
-
 
     public void setQuality(float quality) {
         this.quality = quality;

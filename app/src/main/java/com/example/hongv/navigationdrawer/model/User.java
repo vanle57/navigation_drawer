@@ -1,4 +1,4 @@
-package com.example.administrator.revieweducationcenter.models;
+package com.example.hongv.navigationdrawer.model;
 
 /**
  * Created by Administrator on 03/02/2018.

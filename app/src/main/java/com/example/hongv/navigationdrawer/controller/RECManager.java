@@ -1,9 +1,9 @@
-package com.example.administrator.revieweducationcenter.controllers;
+package com.example.hongv.navigationdrawer.controller;
 
-import com.example.administrator.revieweducationcenter.models.Center;
-import com.example.administrator.revieweducationcenter.models.Course;
-import com.example.administrator.revieweducationcenter.models.Review;
-import com.example.administrator.revieweducationcenter.models.Subject;
+import com.example.hongv.navigationdrawer.model.Center;
+import com.example.hongv.navigationdrawer.model.Course;
+import com.example.hongv.navigationdrawer.model.Review;
+import com.example.hongv.navigationdrawer.model.Subject;
 
 import java.util.ArrayList;
 import java.util.Calendar;

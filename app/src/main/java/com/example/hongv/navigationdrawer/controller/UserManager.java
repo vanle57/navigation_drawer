@@ -1,6 +1,6 @@
-package com.example.administrator.revieweducationcenter.controllers;
+package com.example.hongv.navigationdrawer.controller;
 
-import com.example.administrator.revieweducationcenter.models.User;
+import com.example.hongv.navigationdrawer.model.User;
 
 import java.util.ArrayList;
 

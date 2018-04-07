@@ -1,4 +1,4 @@
-package com.example.administrator.revieweducationcenter.models;
+package com.example.hongv.navigationdrawer.model;
 
 import java.util.Date;
 

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/choose_location"
+        android:title="Choose Your Location..."
+        yourapp:showAsAction="never"></item>
     <item
         android:id="@+id/search_center"
         android:icon="@android:drawable/ic_menu_search"
         android:title="Search Center..."
         yourapp:actionViewClass="android.widget.SearchView"
-        yourapp:showAsAction="always" />
+        android:orderInCategory="100"
+        yourapp:showAsAction="ifRoom|collapseActionView" />
         />
 </menu>
