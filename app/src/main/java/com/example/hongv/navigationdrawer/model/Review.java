@@ -11,10 +11,10 @@ public class Review {
     private int idCenter;
     private int idUser;
     private String content;
-    private Date date;
-    private float quality;
+    private String  date;
+    private int quality;
 
-    public Review(int idReview, int idCenter, int idUser, String content, Date date, float quality) {
+    public Review(int idReview, int idCenter, int idUser, String content, String date, int quality) {
         this.idReview = idReview;
         this.idCenter = idCenter;
         this.idUser = idUser;
@@ -55,19 +55,19 @@ public class Review {
         this.content = content;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public float getQuanlity() {
+    public int getQuanlity() {
         return quality;
     }
 
-    public void setQuanlity(float quanlity) {
+    public void setQuanlity(int quanlity) {
         this.quality = quanlity;
     }
 

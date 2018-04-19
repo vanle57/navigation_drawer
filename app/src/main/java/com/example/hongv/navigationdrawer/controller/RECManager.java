@@ -52,14 +52,14 @@ public class RECManager {
         mCourseArraylist.add(new Course(3, "Lop 9", 3, 4, "Chuyen on thi len lop 10. Dam bao dau 100%"));
         mCourseArraylist.add(new Course(4, "Toan THCS", 1, 3, "Chuyen day toan cap THCS va on thi len lop 10"));
         mCourseArraylist.add(new Course(5, "Khoa Pronunciation", 4, 5, "Khoa hoc tieng Anh giao tiep danh cho nguoi moi bat dau" ));
-
-        Calendar cal = Calendar.getInstance();
-
-        mReviewArrayList.add(new Review(1,1,1,"Giờ học linh hoạt. Do mình đi làm nên thời gian rảnh rỗi ko nhiều, ở WSE mình có thể tự sắp xếp lịch học, bữa nào bận quá có thể báo PT chuyển sang bữa khác học bù.", Calendar.getInstance().getTime(), 1));
-        mReviewArrayList.add(new Review(2,2,2,"Giáo viên rất giỏi và tận tình, rất chịu khó nói chuyện với mình để mình khá lên và tự tin hơn.", Calendar.getInstance().getTime(),2));
-        mReviewArrayList.add(new Review(3,3,3,"Có nhiều hoạt động ngoại khóa như mấy buổi workshop hay seminar, diễn giả toàn là chuyên gia nổi tiếng, mình biết thêm được rất nhiều kiến thức bên ngoài.", Calendar.getInstance().getTime(),4));
-        mReviewArrayList.add(new Review(5,4,4,"Môi trường 100% giao tiếp bằng Tiếng Anh, nên mỗi lần vô học là mình thích lắm, cảm giác cứ như là đang ở bên nước ngoài thực thụ. Bên cạnh đó, cơ sở vật chất ở đây là cực kì tốt, đầy đủ tiện nghi luôn nha.", Calendar.getInstance().getTime(),4));
-        mReviewArrayList.add(new Review(5,5,5,"Giáo viên rất giỏi và tận tình, rất chịu khó nói chuyện với mình để mình khá lên và tự tin hơn.", Calendar.getInstance().getTime(),4));
+//
+//        Calendar cal = Calendar.getInstance();
+//
+//        mReviewArrayList.add(new Review(1,1,1,"Giờ học linh hoạt. Do mình đi làm nên thời gian rảnh rỗi ko nhiều, ở WSE mình có thể tự sắp xếp lịch học, bữa nào bận quá có thể báo PT chuyển sang bữa khác học bù.", Calendar.getInstance().getTime(), 1));
+//        mReviewArrayList.add(new Review(2,2,2,"Giáo viên rất giỏi và tận tình, rất chịu khó nói chuyện với mình để mình khá lên và tự tin hơn.", Calendar.getInstance().getTime(),2));
+//        mReviewArrayList.add(new Review(3,3,3,"Có nhiều hoạt động ngoại khóa như mấy buổi workshop hay seminar, diễn giả toàn là chuyên gia nổi tiếng, mình biết thêm được rất nhiều kiến thức bên ngoài.", Calendar.getInstance().getTime(),4));
+//        mReviewArrayList.add(new Review(5,4,4,"Môi trường 100% giao tiếp bằng Tiếng Anh, nên mỗi lần vô học là mình thích lắm, cảm giác cứ như là đang ở bên nước ngoài thực thụ. Bên cạnh đó, cơ sở vật chất ở đây là cực kì tốt, đầy đủ tiện nghi luôn nha.", Calendar.getInstance().getTime(),4));
+//        mReviewArrayList.add(new Review(5,5,5,"Giáo viên rất giỏi và tận tình, rất chịu khó nói chuyện với mình để mình khá lên và tự tin hơn.", Calendar.getInstance().getTime(),4));
 
 
 

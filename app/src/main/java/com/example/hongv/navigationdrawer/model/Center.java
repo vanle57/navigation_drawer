@@ -9,18 +9,28 @@ import java.io.Serializable;
 public class Center implements Serializable{
     private  int idCenter;
     private  String nameCenter;
+    private  String describe;
     private  String address;
     private  String phone;
     private  int picture;
     private  float quality;
 
-    public Center(int idCenter, String nameCenter, String address, String phone, int picture, float quality) {
+    public Center(int idCenter, String nameCenter, String describe, String address, String phone, int picture, float quality) {
         this.idCenter = idCenter;
         this.nameCenter = nameCenter;
+        this.describe = describe;
         this.address = address;
         this.phone = phone;
         this.picture = picture;
         this.quality = quality;
+    }
+
+    public String getDescribe() {
+        return describe;
+    }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 
     public int getIdCenter() {
@@ -76,9 +86,10 @@ public class Center implements Serializable{
         return "Center{" +
                 "idCenter=" + idCenter +
                 ", nameCenter='" + nameCenter + '\'' +
+                ", describe='" + describe + '\'' +
                 ", address='" + address + '\'' +
-                ", phone=" + phone +
-                ", picture='" + picture + '\'' +
+                ", phone='" + phone + '\'' +
+                ", picture=" + picture +
                 ", quality=" + quality +
                 '}';
     }

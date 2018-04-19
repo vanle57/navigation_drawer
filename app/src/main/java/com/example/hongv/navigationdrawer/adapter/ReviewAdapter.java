@@ -8,32 +8,31 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import com.example.hongv.navigationdrawer.R;
-import com.example.hongv.navigationdrawer.model.Center;
+import com.example.hongv.navigationdrawer.model.Review;
 
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 03/03/2018.
+ * Created by hongv on 4/19/2018.
  */
 
-public class CenterAdapter extends BaseAdapter{
-    ArrayList<Center> listData;
+public class ReviewAdapter extends BaseAdapter {
+    ArrayList<Review> listData;
     LayoutInflater inflater;
     ImageView imgAvatar;
-    TextView txtNameCenter, txtDescribe,txtQuality;
-    public CenterAdapter (ArrayList<Center> listData, Context context){
+    TextView txtUserName, txtContent, txtDanhgia;
+    public ReviewAdapter (ArrayList<Review> listData, Context context){
         this.listData = listData;
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
 
     }
 
-    public ArrayList<Center>  getListData(){
+    public ArrayList<Review> getListData(){
         return listData;
     }
 
-    private void setListData(ArrayList<Center> listData){
+    private void setListData(ArrayList<Review> listData){
         this.listData = listData;
     }
 
@@ -44,7 +43,7 @@ public class CenterAdapter extends BaseAdapter{
     }
 
     @Override
-    public Center getItem(int position){
+    public Review getItem(int position){
         return listData.get(position);
     }
 
@@ -56,20 +55,19 @@ public class CenterAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.item_listview,null);
+            convertView = inflater.inflate(R.layout.item_listview_comment,null);
         }
         imgAvatar = (ImageView) convertView.findViewById(R.id.imgAvatar);
-        txtNameCenter = (TextView) convertView.findViewById(R.id.txtCenTerName);
-        txtDescribe = convertView.findViewById(R.id.txtCenterDescribe);
-        txtQuality =(TextView) convertView.findViewById(R.id.txtCenTerName);
+        txtUserName = (TextView) convertView.findViewById(R.id.txtUserName);
+        txtContent = (TextView)convertView.findViewById(R.id.txtContent);
+        txtDanhgia =(TextView) convertView.findViewById(R.id.txtDanhgia);
 
-        Center center = getItem(position);
-//        imgAvatar.setImageResource(R.drawable.ezienghlish);????
-        txtNameCenter.setText(center.getNameCenter().toString());
+        Review review = getItem(position);
+        txtUserName.setText(String.valueOf(review.getIdUser()));
+        txtContent.setText(review.getContent());
+        txtDanhgia.setText(String.valueOf(review.getQuanlity()));
 
         return convertView;
 
     }
-
-
 }

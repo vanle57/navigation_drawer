@@ -59,16 +59,16 @@ public class CategoryList extends Fragment {
 
     private void getData(){
         mlistCenterData = new ArrayList<>();
-        mlistCenterData.add(new Center(0,"EziEnghlish", "DaNang", "0123456789", R.drawable.ezienghlish, 5));
-        mlistCenterData.add(new Center(1,"Galazy", "DaNang", "0123456789", R.drawable.galaxy, 5));
-        mlistCenterData.add(new Center(2,"Geos", "DaNang", "0123456789", R.drawable.geos, 5));
-        mlistCenterData.add(new Center(3,"Thái Bình Dương", "DaNang", "0123456789", R.drawable.tbd, 5));
-        mlistCenterData.add(new Center(4,"World Win ", "DaNang", "0123456789", R.drawable.workdwin, 5));
-        mlistCenterData.add(new Center(5,"EziEnghlish", "DaNang", "0123456789", R.drawable.ezienghlish, 5));
-        mlistCenterData.add(new Center(6,"Galazy", "DaNang", "0123456789", R.drawable.galaxy, 5));
-        mlistCenterData.add(new Center(7,"Geos", "DaNang", "0123456789", R.drawable.geos, 5));
-        mlistCenterData.add(new Center(8,"Thái Bình Dương", "DaNang", "0123456789", R.drawable.tbd, 5));
-        mlistCenterData.add(new Center(9,"World Win ", "DaNang", "0123456789", R.drawable.workdwin, 5));
+        mlistCenterData.add(new Center(0,"EziEnghlish", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.ezienghlish, 5));
+        mlistCenterData.add(new Center(1,"Galazy", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.galaxy, 5));
+        mlistCenterData.add(new Center(2,"Geos", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.geos, 5));
+        mlistCenterData.add(new Center(3,"Thái Bình Dương", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.tbd, 5));
+        mlistCenterData.add(new Center(4,"World Win ", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.workdwin, 5));
+        mlistCenterData.add(new Center(5,"EziEnghlish", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.ezienghlish, 5));
+        mlistCenterData.add(new Center(6,"Galazy", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.galaxy, 5));
+        mlistCenterData.add(new Center(7,"Geos", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.geos, 5));
+        mlistCenterData.add(new Center(8,"Thái Bình Dương", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.tbd, 5));
+        mlistCenterData.add(new Center(9,"World Win ", "Anh văn giao tiếp","DaNang", "0123456789", R.drawable.workdwin, 5));
     }
 
 }
