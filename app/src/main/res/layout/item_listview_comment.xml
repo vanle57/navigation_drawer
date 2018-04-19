@@ -28,49 +28,50 @@
             android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
             android:orientation="vertical"
             >
-
-            <TextView
-                android:id="@+id/txtUserName"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="User Name"
-                android:textSize="@dimen/item_listview_titleTextSize"
-                android:textStyle="bold"
-                android:textColor="#FF000000"
-                />
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="User Name"
+                    android:textSize="@dimen/item_listview_titleTextSize"
+                    android:textStyle="bold"
+                    android:textColor="#FF000000"
+
+                    />
+                <TextView
+                    android:id="@+id/txtDanhgia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="5"
+                    android:textSize="@dimen/item_listview_titleTextSize"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgStar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_star_big_on"
+                    />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/txtContent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingTop="5dp"
-                android:hint="Mình rất thích nơi này... Xem thêm"
+                android:hint="Mình rất thích nơi này. Giáo viên dạy nhiệt tình.. Xem thêm"
                 android:textSize="@dimen/item_listview_subtitleTextSize" />
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:weightSum="3"
-            >
-            <TextView
-                android:id="@+id/txtDanhgia"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="5"
-                android:textSize="@dimen/item_listview_titleTextSize"
-                android:layout_weight="1"
-                android:textStyle="bold"/>
 
-            <ImageView
-                android:id="@+id/imgStar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_star_big_on"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1.5"/>
-        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

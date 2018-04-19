@@ -6,6 +6,15 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="logo_marginTop">20dp</dimen>
+    <dimen name="logo_width">180dp</dimen>
+    <dimen name="logo_height">200dp</dimen>
+
+    <dimen name="btn_signup_fb_marginTop">30dp</dimen>
+    <dimen name="btn_signup_fb_marginLeft">20dp</dimen>
+    <dimen name="btn_signup_fb_marginRight">20dp</dimen>
+    <dimen name="btn_signup_fb_marginBottom">10dp</dimen>
+
     <dimen name="item_listview_paddingLeft">16dp</dimen>
     <dimen name="item_listview_paddingRight">16dp</dimen>
     <dimen name="item_listview_paddingTop">8dp</dimen>
@@ -16,8 +25,8 @@
     <dimen name="item_listview_textview_height">48dp</dimen>
     <dimen name="item_listview_textview_paddingLeft">16dp</dimen>
 
-    <dimen name="item_listview_titleTextSize">15sp</dimen>
-    <dimen name="item_listview_subtitleTextSize">10sp</dimen>
+    <dimen name="item_listview_titleTextSize">20sp</dimen>
+    <dimen name="item_listview_subtitleTextSize">15sp</dimen>
 
     <dimen name="list_desTextSize">10sp</dimen>
     <dimen name="detail_cover.top_padding">24dp</dimen>

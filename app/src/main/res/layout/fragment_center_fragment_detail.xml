@@ -70,7 +70,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/detail_text_subtitle"
                         android:textStyle="bold"
-                        android:background="@color/detail_center_color"
+                        android:background="none"
                         />
                     <Button
                         android:layout_width="wrap_content"
@@ -80,9 +80,10 @@
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:textSize="@dimen/detail_text_subtitle"
-                        android:background="@color/detail_center_color"
+                        android:background="none"
                         />
                     <Button
+                        android:id="@+id/btn_comment"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/btn_option_padding"
@@ -90,7 +91,7 @@
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:textSize="@dimen/detail_text_subtitle"
-                        android:background="@color/detail_center_color"
+                        android:background="none"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -196,8 +197,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
 
 </RelativeLayout>
