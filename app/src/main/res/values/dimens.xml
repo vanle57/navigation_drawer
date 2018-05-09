@@ -40,5 +40,12 @@
     <dimen name="btn_option_padding">8dp</dimen>
     <dimen name="btn_option_text"></dimen>
 
+    <dimen name="add_margin">10dp</dimen>
+    <dimen name="add_form.height">40dp</dimen>
+    <dimen name="add_padding.left">10dp</dimen>
+    <dimen name="add_text.size">18sp</dimen>
+
+    <dimen name="profile_cover.height">150dp</dimen>
+
 
 </resources>

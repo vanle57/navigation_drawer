@@ -30,7 +30,7 @@
         android:layout_height="199dp"
         android:layout_margin="@dimen/add_margin"
         android:background="@drawable/border"
-        android:hint="@string/add_diachi_hint"
+        android:hint="@string/add_address_hint"
         android:inputType="number"
         android:paddingLeft="@dimen/add_padding.left"
         android:textSize="@dimen/add_text.size" />
@@ -41,7 +41,7 @@
         android:layout_height="@dimen/add_form.height"
         android:background="@drawable/border"
         android:layout_margin="@dimen/add_margin"
-        android:hint="@string/add_sdt_hint"
+        android:hint="@string/add_phone_hint"
         android:paddingLeft="@dimen/add_padding.left"
         android:textSize="@dimen/add_text.size"
         />

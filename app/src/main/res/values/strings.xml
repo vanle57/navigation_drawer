@@ -23,4 +23,10 @@
     <string name="btn_like">LIKE</string>
     <string name="btn_save">LƯU LẠI</string>
     <string name="btn_comment">BÌNH LUẬN</string>
+
+    <string name="add_name_hint">Full name</string>
+    <string name="add_phone_hint">Phone number</string>
+    <string name="add_address_hint">Address</string>
+    <string name="add_add">ADD</string>
+    <string name="add_cancel">CANCEL</string>
 </resources>

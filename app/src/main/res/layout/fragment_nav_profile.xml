@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:id="@+id/pofile_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_cover.height"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/item_listview_ic_width"
+            android:layout_height="@dimen/item_listview_ic_height"
+            android:background="@mipmap/ic_launcher_round" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_listview_titleTextSize"
+        android:text="User Name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_listview_subtitleTextSize"
+            android:text="UserName@abc.com"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pofile_cover"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/item_listview_ic_width"
+                    android:layout_height="@dimen/item_listview_ic_height"
+                    android:src="@drawable/ic_center_detail_cat"
+                    android:paddingLeft="@dimen/item_listview_ic_paddingLeft"/>
+                <TextView
+                    android:id="@+id/tv_center_detail_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:text="Ngoại ngữ - Tiếng Anh"
+                    android:textSize="@dimen/item_listview_text_size"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/item_listview_ic_width"
+                    android:layout_height="@dimen/item_listview_ic_height"
+                    android:src="@drawable/ic_center_detail_cmnt"
+                    android:paddingLeft="@dimen/item_listview_ic_paddingLeft"/>
+                <TextView
+                    android:id="@+id/tv_center_detail_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:text="Đã có 50 bình luận về nơi này"
+                    android:textSize="@dimen/item_listview_text_size"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/item_listview_ic_width"
+                    android:layout_height="@dimen/item_listview_ic_height"
+                    android:src="@drawable/ic_center_detail_contact"
+                    android:paddingLeft="@dimen/item_listview_ic_paddingLeft"/>
+                <TextView
+                    android:id="@+id/tv_center_detail_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:text="Thông tin liên hệ"
+                    android:textSize="@dimen/item_listview_text_size"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/item_listview_ic_width"
+                    android:layout_height="@dimen/item_listview_ic_height"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:src="@android:drawable/star_big_on"/>
+                <TextView
+                    android:id="@+id/tv_center_detail_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:text="4.5"
+                    android:textSize="@dimen/item_listview_text_size"/>
+                <ImageView
+                    android:layout_width="@dimen/item_listview_ic_width"
+                    android:layout_height="@dimen/item_listview_ic_height"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:src="@drawable/ic_center_detail_love"/>
+                <TextView
+                    android:id="@+id/tv_center_detail_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_listview_textview_paddingLeft"
+                    android:text="50"
+                    android:textSize="@dimen/item_listview_text_size"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

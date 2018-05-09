@@ -21,7 +21,7 @@ public class ReviewAdapter extends BaseAdapter {
     ArrayList<Review> listData;
     LayoutInflater inflater;
     ImageView imgAvatar;
-    TextView txtUserName, txtContent, txtDanhgia;
+    TextView txtUserName, txtCommentContent, txtDanhgia;
     public ReviewAdapter (ArrayList<Review> listData, Context context){
         this.listData = listData;
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
@@ -59,12 +59,12 @@ public class ReviewAdapter extends BaseAdapter {
         }
         imgAvatar = (ImageView) convertView.findViewById(R.id.imgAvatar);
         txtUserName = (TextView) convertView.findViewById(R.id.txtUserName);
-        txtContent = (TextView)convertView.findViewById(R.id.txtContent);
+        txtCommentContent = (TextView)convertView.findViewById(R.id.txtCommentContent);
         txtDanhgia =(TextView) convertView.findViewById(R.id.txtDanhgia);
 
         Review review = getItem(position);
         txtUserName.setText(String.valueOf(review.getIdUser()));
-        txtContent.setText(review.getContent());
+        txtCommentContent.setText(review.getContent());
         txtDanhgia.setText(String.valueOf(review.getQuanlity()));
 
         return convertView;

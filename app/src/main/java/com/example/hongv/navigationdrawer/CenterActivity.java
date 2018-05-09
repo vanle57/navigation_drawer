@@ -1,14 +1,9 @@
 package com.example.hongv.navigationdrawer;
 
-import android.app.FragmentManager;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,9 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.support.v7.widget.Toolbar;
 import com.example.hongv.navigationdrawer.adapter.ViewPagerAdapter;
-import com.example.hongv.navigationdrawer.tabfragment.CenterFragmentComment;
-import com.example.hongv.navigationdrawer.tabfragment.CenterFragmentCourse;
-import com.example.hongv.navigationdrawer.tabfragment.CenterFragmentDetail;
+import com.example.hongv.navigationdrawer.view.tabfragment.CenterCommentFragment;
+import com.example.hongv.navigationdrawer.view.tabfragment.CenterCourseFragment;
+import com.example.hongv.navigationdrawer.view.tabfragment.CenterDetailFragment;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 public class CenterActivity extends AppCompatActivity {
@@ -49,9 +44,9 @@ public class CenterActivity extends AppCompatActivity {
     }
     private void setupViewPager (ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CenterFragmentDetail(), "DETAIL");
-        adapter.addFragment(new CenterFragmentComment(), "COMMENT");
-        adapter.addFragment(new CenterFragmentCourse(), "COURSE");
+        adapter.addFragment(new CenterDetailFragment(), "DETAIL");
+        adapter.addFragment(new CenterCommentFragment(), "COMMENT");
+        adapter.addFragment(new CenterCourseFragment(), "COURSE");
         viewPager.setAdapter(adapter);
     }
 

@@ -56,7 +56,7 @@ public class CenterAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.item_listview,null);
+            convertView = inflater.inflate(R.layout.item_listview_center,null);
         }
         imgAvatar = (ImageView) convertView.findViewById(R.id.imgAvatar);
         txtNameCenter = (TextView) convertView.findViewById(R.id.txtCenTerName);

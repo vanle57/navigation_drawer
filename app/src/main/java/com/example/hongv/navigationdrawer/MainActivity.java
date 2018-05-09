@@ -1,6 +1,8 @@
 package com.example.hongv.navigationdrawer;
 
+import android.app.AlertDialog;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +18,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.hongv.navigationdrawer.view.navfragment.CategoryFragment;
+import com.example.hongv.navigationdrawer.view.navfragment.CommentFragment;
+import com.example.hongv.navigationdrawer.view.navfragment.LoveFragment;
+import com.example.hongv.navigationdrawer.view.navfragment.ProfileFragment;
+import com.example.hongv.navigationdrawer.view.navfragment.SaveFragment;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 
@@ -76,19 +83,16 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_category_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new CategoryList()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main, new CategoryFragment()).commit();
         } else if (id == R.id.nav_post) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new YourCommentList()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main, new CommentFragment()).commit();
         } else if (id == R.id.nav_love_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new LoveList()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main, new LoveFragment()).commit();
         } else if (id == R.id.nav_saved_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new SavedList()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main, new SaveFragment()).commit();
         } else if (id == R.id.nav_profile) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new YourProfile()).commit();
-        } else if (id == R.id.nav_location) {
-            fragmentManager.beginTransaction().replace(R.id.content_main, new YourLocation()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main, new ProfileFragment()).commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -136,11 +140,25 @@ public class MainActivity extends AppCompatActivity
                 materialSearchView.setMenuItem(item);
                 break;
             case R.id.choose_location:
-                Toast.makeText(this, "Choose", Toast.LENGTH_SHORT).show();
+                showSelectLocation();
                 break;
             default:
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public void showSelectLocation () {
+        final String [] location = getResources().getStringArray(R.array.my_location);
+        new AlertDialog.Builder(this)
+                .setTitle("Choose Location")
+                .setItems(location, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(), "Selected " + location[which], Toast.LENGTH_SHORT).show();
+            }
+        })
+                .create()
+                .show();
     }
 }

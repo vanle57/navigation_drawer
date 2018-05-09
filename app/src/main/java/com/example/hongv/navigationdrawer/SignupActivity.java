@@ -86,7 +86,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void Anhxa(){
-        profilePictureView = (ProfilePictureView)findViewById(R.id.imageProfilePictureview);
+//        profilePictureView = (ProfilePictureView)findViewById(R.id.imageProfilePictureview);
         loginButton = (LoginButton)findViewById(R.id.login_button);
     }
 

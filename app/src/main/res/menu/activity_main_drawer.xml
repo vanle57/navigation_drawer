@@ -24,10 +24,6 @@
             android:id="@+id/nav_love_list"
             android:icon="@drawable/ic_menu_lovelist"
             android:title="Love" />
-        <item
-            android:id="@+id/nav_location"
-            android:icon="@drawable/ic_menu_location"
-            android:title="Your Location" />
 
     </group>
 
